@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ForwardDirection : MonoBehaviour {
-
+public class ForwardDirection : MonoBehaviour 
+{
     Ray ray;
+	public Vector3 RayExtreme { get { return rayExtreme; } }
+	private Vector3 rayExtreme;
     float distance = 20f;
 
     RaycastHit hitInfo;
@@ -24,7 +26,8 @@ public class ForwardDirection : MonoBehaviour {
         ray.origin = transform.position;
         ray.direction = transform.forward;
         Debug.DrawRay(ray.origin, ray.direction * distance, Color.green);
-	}
+		rayExtreme = ray.direction*distance;
+    }
 
     public RaycastHit Hit()
     {

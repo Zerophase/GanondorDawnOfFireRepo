@@ -213,14 +213,17 @@ public class Octorok : Unit, IObserver
     {
         if (particleSystem.isPlaying)
         {
-            if (stateMachine.CurrentState != MoblinSummoned.Instance)
-            {
-                particleSystem.transform.rotation = Quaternion.LookRotation(
-                (ThirdPerson_Controller.Instance.transform.position - gameObject.transform.position));
-            }
-            else
-                particleSystem.transform.rotation = Quaternion.LookRotation(
-                    ThirdPerson_Controller.Instance.transform.forward);
+	        if (stateMachine.CurrentState != MoblinSummoned.Instance)
+	        {
+		        particleSystem.transform.rotation = Quaternion.LookRotation(
+			        (ThirdPerson_Controller.Instance.transform.position - gameObject.transform.position));
+	        }
+	        else
+	        {
+				Vector3 roation = new Vector3(ThirdPerson_Camera.Instance.transform.forward.x,
+					0f, ThirdPerson_Camera.Instance.transform.forward.z);
+				particleSystem.transform.rotation = Quaternion.LookRotation(roation);
+	        }
             base.grabMechanic(flip);
         }
     }

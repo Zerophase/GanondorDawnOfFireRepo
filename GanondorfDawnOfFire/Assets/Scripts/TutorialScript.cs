@@ -50,7 +50,7 @@ public class TutorialScript : MonoBehaviour {
 
 		if(collider.tag == "FirstTutorialBox")
 		{
-		TutorialText.text = "You can use the Spacebar to grab the Enemy and hit space again to throw them";
+		TutorialText.text = "Use the Spacebar to grab the Enemy,\n and hit space again to throw them";
 			StartCoroutine(DisableText());
 			Destroy(collider);
 		}

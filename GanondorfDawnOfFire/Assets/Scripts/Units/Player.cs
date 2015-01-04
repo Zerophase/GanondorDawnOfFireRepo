@@ -18,11 +18,6 @@ public class Player : BaseUnit
         Subscribe();
 	}
 
-    protected override void Update()
-    {
-	    
-	}
-
     public void HandleMessage(Telegram telegram)
     {
         if (telegram is PlayerTelegram)

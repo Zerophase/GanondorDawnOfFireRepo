@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 public enum Allegiance {NULL, ALLY, ENEMY};
 
@@ -46,7 +47,7 @@ public class Unit : BaseUnit, IResetable
     protected MediatorTelegram mediatorTelegram;
 
     protected ParticleSystem particleSystem;
-    protected float speedParticleSystem = 0.25f;
+    protected float speedParticleSystem = 6f;
 
     protected enum Grab { GRAB = -1, THROW = 1 };
 
@@ -239,7 +240,7 @@ public class Unit : BaseUnit, IResetable
         if (timerPull > 2.0f)
         {
             particleSystem.Stop();
-
+			particleSystem.Clear();
             transform.position = new Vector3(transform.position.x, resummon_y, transform.position.z);
             Debug.Log("Moblin Position: " + transform.position);
             Debug.Log("Player Position: " + ThirdPerson_Controller.Instance.transform.position);
@@ -253,8 +254,9 @@ public class Unit : BaseUnit, IResetable
 
     protected virtual void grabMechanic(int flip)
     {
-        Vector3 direction = ThirdPerson_Controller.Instance.transform.forward * flip;
-        gameObject.transform.position += direction.normalized * speedParticleSystem;
+        Vector3 direction = new Vector3(ThirdPerson_Camera.Instance.transform.forward.x, 0f,
+			ThirdPerson_Camera.Instance.transform.forward.z) * flip;
+        gameObject.transform.position += (direction.normalized * speedParticleSystem) * Time.deltaTime;
     }
 
     float stopParticleSystemTimer = 0f;
@@ -266,6 +268,7 @@ public class Unit : BaseUnit, IResetable
             {
                 Debug.Log("Particle system has stopped");
                 particleSystem.Stop();
+	            particleSystem.Clear();
                 gameObject.transform.position = ThirdPerson_Controller.Instance.transform.position;
             }
             stopParticleSystemTimer = 0f;
