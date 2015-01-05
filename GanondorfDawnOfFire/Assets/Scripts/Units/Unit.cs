@@ -47,7 +47,7 @@ public class Unit : BaseUnit, IResetable
     protected MediatorTelegram mediatorTelegram;
 
     protected ParticleSystem particleSystem;
-    protected float speedParticleSystem = 6f;
+    protected float speedParticleSystem = 20f;
 
     protected enum Grab { GRAB = -1, THROW = 1 };
 
@@ -67,6 +67,8 @@ public class Unit : BaseUnit, IResetable
     protected float resummon_y;
 
     public float Radius = 15f;
+
+	private bool killForwardMovement;
 
     public void set_areaAround()
     {
@@ -128,6 +130,11 @@ public class Unit : BaseUnit, IResetable
         }
     }
 
+	public void StopMovement()
+	{
+		killForwardMovement = true;
+	}
+
     protected override void Update()
     {
 		acceleration = steeringForce; /// mass; //Mass is alway 1 we can avoid the division
@@ -136,7 +143,8 @@ public class Unit : BaseUnit, IResetable
         Velocity = Vector3.ClampMagnitude(Velocity, MaxSpeed);
 		Velocity.Set(Velocity.x, 0f, Velocity.z);
 
-        transform.rotation = Quaternion.LookRotation(Velocity, Vector3.up);
+		if(Velocity != Vector3.zero)
+			transform.rotation = Quaternion.LookRotation(Velocity, Vector3.up);
  
 		if (Velocity.y > 0 || Velocity.y < 0)
 			Velocity = new Vector3(Velocity.x, 0f, Velocity.z);
@@ -230,6 +238,7 @@ public class Unit : BaseUnit, IResetable
 
     public void Pull()
     {
+	    killForwardMovement = false;
         //TODO check unit type here for grab?
         grabMechanic((int)Grab.GRAB);
     }
@@ -252,11 +261,15 @@ public class Unit : BaseUnit, IResetable
         return false;
     }
 
+	// TODO Stop Unit at wall here
     protected virtual void grabMechanic(int flip)
     {
-        Vector3 direction = new Vector3(ThirdPerson_Camera.Instance.transform.forward.x, 0f,
-			ThirdPerson_Camera.Instance.transform.forward.z) * flip;
-        gameObject.transform.position += (direction.normalized * speedParticleSystem) * Time.deltaTime;
+		if(!killForwardMovement)
+		{
+			Vector3 direction = new Vector3(ThirdPerson_Camera.Instance.transform.forward.x, 0f,
+				ThirdPerson_Camera.Instance.transform.forward.z) * flip;
+			gameObject.transform.position += (direction.normalized * speedParticleSystem) * Time.deltaTime;
+		}
     }
 
     float stopParticleSystemTimer = 0f;
@@ -319,7 +332,7 @@ public class Unit : BaseUnit, IResetable
 		{
             model.transform.GetChild(i).gameObject.GetComponent<MeshRenderer>().enabled = !model.transform.GetChild(i).gameObject.GetComponent<MeshRenderer>().enabled;
 		}
-        gameObject.GetComponent<BoxCollider>().enabled = !gameObject.GetComponent<BoxCollider>().enabled;
+        gameObject.GetComponent<BoxCollider>().isTrigger = !gameObject.GetComponent<BoxCollider>().isTrigger;
         
     }
 

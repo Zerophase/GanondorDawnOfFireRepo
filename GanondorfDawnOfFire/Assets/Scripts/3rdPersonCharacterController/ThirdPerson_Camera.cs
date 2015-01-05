@@ -184,24 +184,29 @@ public class ThirdPerson_Camera : MonoBehaviour
             clipPlaneLines(clipPlane);
         }
 
-        if (Physics.Linecast(from, clipPlane.UpperLeft, out hitInfo) && hitInfo.collider.tag != "Player")
+        if (Physics.Linecast(from, clipPlane.UpperLeft, out hitInfo) && hitInfo.collider.tag != "Player" &&
+			!hitInfo.collider.isTrigger)
             nearestDistance = hitInfo.distance;
-        if (Physics.Linecast(from, clipPlane.LowerLeft, out hitInfo) && hitInfo.collider.tag != "Player")
+		if (Physics.Linecast(from, clipPlane.LowerLeft, out hitInfo) && hitInfo.collider.tag != "Player" &&
+			!hitInfo.collider.isTrigger)
         {
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;
         }
-        if (Physics.Linecast(from, clipPlane.UpperRight, out hitInfo) && hitInfo.collider.tag != "Player")
+		if (Physics.Linecast(from, clipPlane.UpperRight, out hitInfo) && hitInfo.collider.tag != "Player" &&
+			!hitInfo.collider.isTrigger)
         {
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;
         }
-        if (Physics.Linecast(from, clipPlane.LowerRight, out hitInfo) && hitInfo.collider.tag != "Player")
+		if (Physics.Linecast(from, clipPlane.LowerRight, out hitInfo) && hitInfo.collider.tag != "Player" &&
+			!hitInfo.collider.isTrigger)
         {
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;
         }
-        if (Physics.Linecast(from, to + transform.forward * -camera.nearClipPlane, out hitInfo) && hitInfo.collider.tag != "Player")
+		if (Physics.Linecast(from, to + transform.forward * -camera.nearClipPlane, out hitInfo) && hitInfo.collider.tag != "Player" &&
+			!hitInfo.collider.isTrigger)
         {
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;

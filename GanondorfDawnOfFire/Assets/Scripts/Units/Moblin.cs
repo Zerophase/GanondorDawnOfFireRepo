@@ -162,19 +162,4 @@ public class Moblin : Unit, IObserver
             base.grabMechanic(flip);
         }
     }
-    //TODO Remove if Octorok doesn't need this.
-    //public bool KeyPressTimer()
-    //{
-    //    if(keyPressTimer > 0.5f)
-    //    {
-    //        keyPressTimer = 0.0f;
-    //        return true;
-    //    }
-    //    else
-    //    {
-    //        keyPressTimer += Time.deltaTime;
-    //        return false;
-    //    }
-            
-    //}
 }

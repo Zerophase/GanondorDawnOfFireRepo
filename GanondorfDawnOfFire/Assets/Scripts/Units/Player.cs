@@ -22,7 +22,6 @@ public class Player : BaseUnit
     {
         if (telegram is PlayerTelegram)
         {
-
             Defend((telegram as PlayerTelegram).Sender.Strength);
         }
     }

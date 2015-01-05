@@ -43,8 +43,6 @@ public class ThirdPerson_Motor : MonoBehaviour
         if (Move.magnitude > 1)
             Move = Vector3.Normalize(Move);
 
-        applySlide();
-
         Move *= MoveSpeed;
         Move = new Vector3(Move.x, VerticalVelocity, Move.z);
 

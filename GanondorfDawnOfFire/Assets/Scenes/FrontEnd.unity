@@ -106,6 +106,7 @@ Transform:
   - {fileID: 549935015}
   - {fileID: 164225340}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 17
 --- !u!114 &22984301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +259,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 287283043}
+  m_RootOrder: 0
 --- !u!114 &76628348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +337,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1017944323}
+  m_RootOrder: 1
 --- !u!114 &98679641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +428,7 @@ Transform:
   m_LocalScale: {x: 1.00007987, y: 1.00007987, z: 1.00007987}
   m_Children: []
   m_Father: {fileID: 903719914}
+  m_RootOrder: 8
 --- !u!114 &120856607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,6 +558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1418809404}
+  m_RootOrder: 1
 --- !u!114 &130891801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,6 +636,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22984300}
+  m_RootOrder: 1
 --- !u!114 &164225341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,6 +731,7 @@ Transform:
   - {fileID: 493881846}
   - {fileID: 1659743042}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 5
 --- !u!114 &186141860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,6 +874,7 @@ Transform:
   - {fileID: 1543391275}
   - {fileID: 1475348376}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 14
 --- !u!114 &216346751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,6 +978,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 575961422}
+  m_RootOrder: 1
 --- !u!114 &279689401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1064,6 +1073,7 @@ Transform:
   - {fileID: 76628347}
   - {fileID: 1911206904}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 12
 --- !u!114 &287283044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,6 +1196,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1781217896}
+  m_RootOrder: 2
 --- !u!114 &317262550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,7 +1309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &321733106
 Transform:
   m_ObjectHideFlags: 0
@@ -1310,6 +1321,7 @@ Transform:
   m_LocalScale: {x: 1.00007987, y: 1.00007987, z: 1.00007987}
   m_Children: []
   m_Father: {fileID: 903719914}
+  m_RootOrder: 9
 --- !u!114 &321733107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,6 +1451,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 444861700}
+  m_RootOrder: 0
 --- !u!114 &434254060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,6 +1531,7 @@ Transform:
   m_Children:
   - {fileID: 434254059}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 10
 --- !u!114 &444861701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1647,6 +1661,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 682909470}
+  m_RootOrder: 1
 --- !u!114 &448684612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1738,6 +1753,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1202162283}
+  m_RootOrder: 0
 --- !u!81 &493513965
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1810,8 +1826,11 @@ Camera:
     m_Bits: 512
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!1 &493881845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +1858,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 186141859}
+  m_RootOrder: 0
 --- !u!114 &493881847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1916,6 +1936,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1418809404}
+  m_RootOrder: 0
 --- !u!114 &531504594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,6 +2014,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 22984300}
+  m_RootOrder: 0
 --- !u!114 &549935016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,6 +2097,7 @@ Transform:
   - {fileID: 786163677}
   - {fileID: 279689400}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 18
 --- !u!114 &575961423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2214,6 +2237,7 @@ Transform:
   - {fileID: 1242716421}
   - {fileID: 448684611}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 1
 --- !u!114 &682909471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,6 +2405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1438469830}
+  m_RootOrder: 1
 --- !u!114 &691068098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,6 +2483,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 575961422}
+  m_RootOrder: 0
 --- !u!114 &786163678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,6 +2561,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1781217896}
+  m_RootOrder: 1
 --- !u!114 &786646074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,6 +2644,7 @@ Transform:
   - {fileID: 1597210720}
   - {fileID: 951864299}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 2
 --- !u!114 &796712634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2763,6 +2791,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1996449059}
+  m_RootOrder: 0
 --- !u!114 &872066076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2844,6 +2873,7 @@ Transform:
   - {fileID: 1600441045}
   - {fileID: 1175710387}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 6
 --- !u!114 &892863629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2972,6 +3002,7 @@ Transform:
   - {fileID: 1224078290}
   - {fileID: 1110829235}
   m_Father: {fileID: 1202162283}
+  m_RootOrder: 1
 --- !u!54 &903719915
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3085,6 +3116,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 796712633}
+  m_RootOrder: 1
 --- !u!114 &951864300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3179,6 +3211,7 @@ Transform:
   - {fileID: 1510293649}
   - {fileID: 98679640}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 11
 --- !u!114 &1017944324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3301,6 +3334,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1418809404}
+  m_RootOrder: 2
 --- !u!114 &1035970240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3425,6 +3459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 903719914}
+  m_RootOrder: 20
 --- !u!114 &1110829236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3542,6 +3577,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1202162283}
+  m_RootOrder: 2
 --- !u!114 &1160536607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3619,6 +3655,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 892863628}
+  m_RootOrder: 1
 --- !u!114 &1175710388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3784,12 +3821,13 @@ Transform:
   m_GameObject: {fileID: 1202162279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00414937781, y: .00414937781, z: .00414937781}
+  m_LocalScale: {x: .00472813239, y: .00472813239, z: .00472813239}
   m_Children:
   - {fileID: 493513964}
   - {fileID: 903719914}
   - {fileID: 1160536605}
   m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1224078289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3822,6 +3860,7 @@ Transform:
   - {fileID: 1828619184}
   - {fileID: 1349672652}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 19
 --- !u!114 &1224078291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3962,6 +4001,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 682909470}
+  m_RootOrder: 0
 --- !u!114 &1242716422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4039,6 +4079,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1804805602}
+  m_RootOrder: 1
 --- !u!114 &1251434062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4128,6 +4169,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1438469830}
+  m_RootOrder: 0
 --- !u!114 &1259449889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4205,6 +4247,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1224078290}
+  m_RootOrder: 1
 --- !u!114 &1349672653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4300,6 +4343,7 @@ Transform:
   - {fileID: 130891800}
   - {fileID: 1035970239}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 15
 --- !u!114 &1418809405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4415,6 +4459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1781217896}
+  m_RootOrder: 0
 --- !u!114 &1423855290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4497,6 +4542,7 @@ Transform:
   - {fileID: 691068097}
   - {fileID: 1605802135}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 16
 --- !u!114 &1438469831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4600,6 +4646,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1804805602}
+  m_RootOrder: 0
 --- !u!114 &1471531340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4676,10 +4723,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1475348375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 195, y: 0, z: 0}
+  m_LocalPosition: {x: 195, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 216346750}
+  m_RootOrder: 2
 --- !u!114 &1475348377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4803,6 +4851,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1017944323}
+  m_RootOrder: 0
 --- !u!114 &1510293650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4880,6 +4929,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 216346750}
+  m_RootOrder: 1
 --- !u!114 &1543391276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4946,7 +4996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1569615137
 Transform:
   m_ObjectHideFlags: 0
@@ -4958,6 +5008,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 903719914}
+  m_RootOrder: 7
 --- !u!114 &1569615138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5087,6 +5138,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 796712633}
+  m_RootOrder: 0
 --- !u!114 &1597210721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5164,6 +5216,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 892863628}
+  m_RootOrder: 0
 --- !u!114 &1600441046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5244,6 +5297,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1438469830}
+  m_RootOrder: 2
 --- !u!114 &1605802136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5367,6 +5421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 186141859}
+  m_RootOrder: 1
 --- !u!114 &1659743043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5456,6 +5511,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1996449059}
+  m_RootOrder: 1
 --- !u!114 &1749319291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5530,13 +5586,14 @@ GameObject:
   - 114: {fileID: 1781217899}
   - 114: {fileID: 1781217897}
   - 114: {fileID: 1781217898}
+  - 82: {fileID: 1781217901}
   m_Layer: 9
   m_Name: Slider_MasterV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1781217896
 Transform:
   m_ObjectHideFlags: 0
@@ -5551,6 +5608,7 @@ Transform:
   - {fileID: 786646073}
   - {fileID: 317262549}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 13
 --- !u!114 &1781217897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5594,13 +5652,12 @@ MonoBehaviour:
 --- !u!114 &1781217898
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400138, guid: 7877c99359a53f84ab8fbe1015cfe6e4,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781217895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a178e016992cb04d837b1882ab88568, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fb9859fa58e6a24aae3b66654d6f07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1781217899
@@ -5642,6 +5699,64 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 200, y: 29.9999981, z: 0}
   m_Center: {x: 100, y: 0, z: 0}
+--- !u!82 &1781217901
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781217895}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 3136e4725daf52840a8a1feb9922b7ff, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1804805601
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,6 +5789,7 @@ Transform:
   - {fileID: 1471531339}
   - {fileID: 1251434061}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 0
 --- !u!114 &1804805603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5820,6 +5936,7 @@ Transform:
   m_LocalScale: {x: .699999988, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1224078290}
+  m_RootOrder: 0
 --- !u!114 &1828619185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5897,6 +6014,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 287283043}
+  m_RootOrder: 1
 --- !u!114 &1911206905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5986,6 +6104,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 216346750}
+  m_RootOrder: 0
 --- !u!114 &1954490033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6069,6 +6188,7 @@ Transform:
   - {fileID: 872066075}
   - {fileID: 1749319290}
   m_Father: {fileID: 903719914}
+  m_RootOrder: 3
 --- !u!114 &1996449060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6186,13 +6306,14 @@ GameObject:
   - 4: {fileID: 2061025509}
   - 114: {fileID: 2061025511}
   - 82: {fileID: 2061025510}
+  - 114: {fileID: 2061025512}
   m_Layer: 0
   m_Name: VolumeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2061025509
 Transform:
   m_ObjectHideFlags: 0
@@ -6204,6 +6325,7 @@ Transform:
   m_LocalScale: {x: 199, y: 199, z: 199}
   m_Children: []
   m_Father: {fileID: 903719914}
+  m_RootOrder: 4
 --- !u!82 &2061025510
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6276,6 +6398,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hSliderValue: 1
+--- !u!114 &2061025512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061025508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8d596c16f05d949922ef16347e4cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thumb: {fileID: 1475348376}
+  mBG: {fileID: 1954490033}
+  mFG: {fileID: 434254060}
+  mValue: 1
+  mFill: 0
+  numberOfSteps: 0
+  onChange: []
+  foreground: {fileID: 0}
+  rawValue: 1
+  direction: 2
+  mInverted: 0
+  mSize: 1
+  mScroll: 0
+  mDir: 2
 --- !u!1 &2093137900
 GameObject:
   m_ObjectHideFlags: 0
@@ -6335,8 +6482,11 @@ Camera:
     m_Bits: 4294966783
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!4 &2093137905
 Transform:
   m_ObjectHideFlags: 0
@@ -6348,3 +6498,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
