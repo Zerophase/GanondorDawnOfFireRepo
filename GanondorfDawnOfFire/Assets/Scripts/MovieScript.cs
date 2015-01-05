@@ -4,6 +4,7 @@ using System.Collections;
 public class MovieScript : MonoBehaviour {
 	public MovieTexture MoveTexture;
 	private float timer;
+	
 	// Use this for initialization
 	void Start () {
 		renderer.material.mainTexture =  MoveTexture;

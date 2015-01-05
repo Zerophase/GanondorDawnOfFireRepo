@@ -101,6 +101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!114 &1402137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +141,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1275168838}
+  m_RootOrder: 0
 --- !u!114 &85930781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,8 +204,11 @@ Camera:
     m_Bits: 256
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!1 &97540323
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +241,7 @@ Transform:
   - {fileID: 1900920027}
   - {fileID: 1658625460}
   m_Father: {fileID: 1860690311}
+  m_RootOrder: 1
 --- !u!114 &97540325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +330,7 @@ Transform:
   m_Children:
   - {fileID: 1692064056}
   m_Father: {fileID: 1860690311}
+  m_RootOrder: 2
 --- !u!114 &253725389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +419,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1860690311}
+  m_RootOrder: 0
 --- !u!114 &311331397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +512,7 @@ Transform:
   - {fileID: 525379702}
   - {fileID: 621173226}
   m_Father: {fileID: 1860690311}
+  m_RootOrder: 4
 --- !u!114 &426217457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +589,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 426217456}
+  m_RootOrder: 0
 --- !u!114 &525379703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 426217456}
+  m_RootOrder: 1
 --- !u!1 &783402816
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +756,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1773371751}
+  m_RootOrder: 0
 --- !u!114 &783402818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,6 +860,7 @@ Transform:
   - {fileID: 85930780}
   - {fileID: 1860690311}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!54 &1275168839
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -949,6 +962,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 97540324}
+  m_RootOrder: 1
 --- !u!114 &1658625461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,6 +1052,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 253725388}
+  m_RootOrder: 0
 --- !u!114 &1692064057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,6 +1153,7 @@ Transform:
   m_Children:
   - {fileID: 783402817}
   m_Father: {fileID: 1860690311}
+  m_RootOrder: 3
 --- !u!114 &1773371752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1223,7 +1239,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860690310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .341705322, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 311331396}
@@ -1232,6 +1248,7 @@ Transform:
   - {fileID: 1773371751}
   - {fileID: 426217456}
   m_Father: {fileID: 1275168838}
+  m_RootOrder: 1
 --- !u!114 &1860690312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,30 +1261,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftAnchor:
-    target: {fileID: 0}
+    target: {fileID: 1275168838}
     relative: 0
-    absolute: 0
+    absolute: -8
   rightAnchor:
-    target: {fileID: 0}
+    target: {fileID: 1275168838}
     relative: 1
-    absolute: 0
+    absolute: 16
   bottomAnchor:
-    target: {fileID: 0}
+    target: {fileID: 1275168838}
     relative: 0
-    absolute: 0
+    absolute: -20
   topAnchor:
-    target: {fileID: 0}
+    target: {fileID: 1275168838}
     relative: 1
-    absolute: 0
+    absolute: 20
   mColor: {r: .41911763, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 588
-  mHeight: 362
+  mHeight: 463
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.62430942
+  aspectRatio: 1.2699784
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Window
   mType: 1
@@ -1319,6 +1336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 97540324}
+  m_RootOrder: 0
 --- !u!114 &1900920028
 MonoBehaviour:
   m_ObjectHideFlags: 0
